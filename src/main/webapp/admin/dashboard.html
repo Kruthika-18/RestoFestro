@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard - RestoFestro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="admin-nav">
+    <span class="admin-brand">RestoFestro Admin</span>
+    <a href="dashboard.html" class="is-active">Dashboard</a>
+    <a href="../adminFood">Manage Food</a>
+    <a href="../adminOrders">Manage Orders</a>
+    <a href="../adminLogout">Logout</a>
+</nav>
+
+<main class="page">
+    <h1 class="page-title">Admin Dashboard</h1>
+    <p class="page-sub">Welcome, Admin. What would you like to do?</p>
+
+    <div class="admin-cards">
+        <a class="admin-card" href="../adminFood">
+            <h3>Manage Food</h3>
+            <p>Add new dishes or remove old ones.</p>
+        </a>
+        <a class="admin-card" href="../adminOrders">
+            <h3>Manage Orders</h3>
+            <p>View orders and update their status.</p>
+        </a>
+        <a class="admin-card" href="../adminLogout">
+            <h3>Logout</h3>
+            <p>End the admin session.</p>
+        </a>
+    </div>
+</main>
+</body>
+</html>

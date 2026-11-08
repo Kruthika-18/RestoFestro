@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Login - RestoFestro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="auth-page">
+    <div class="auth-card">
+        <a href="../home.html" class="logo"><span class="logo__name">RestoFestro</span><span class="logo__tag">Admin Panel</span></a>
+        <p class="tagline">Sign in to manage food and orders.</p>
+
+        <form action="../adminLogin" method="post">
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Password</label>
+            <input type="password" name="password" required>
+
+            <button type="submit" class="btn btn--gold">Login</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

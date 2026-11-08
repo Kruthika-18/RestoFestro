@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RestoFestro - Taste the Traditions of South India</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="site-header__bar">
+        <a href="home.html" class="logo">
+            <span class="logo__name">RestoFestro</span>
+            <span class="logo__tag">Taste the Traditions of South India</span>
+        </a>
+
+        <button class="nav-toggle" type="button" onclick="document.getElementById('nav').classList.toggle('is-open')">Menu</button>
+
+        <nav class="site-nav" id="nav">
+            <a href="home.html" class="is-active">Home</a>
+            <a href="#states">States</a>
+            <a href="#dishes">Dishes</a>
+            <a href="#story">About</a>
+            <a href="orders">My Orders</a>
+            <a href="cart">Cart</a>
+            <a href="logout">Logout</a>
+            <a href="#states" class="btn btn--gold btn--sm">Order Now</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+    <img class="hero__img" src="images/hero.jpg" alt="A dosa served with chutneys, sambar and brass dishes on a banana leaf">
+    <div class="hero__inner">
+        <p class="hero__kicker">Authentic <i>&#10022;</i> Fresh <i>&#10022;</i> Traditional</p>
+        <h1 class="gold-text">Taste the Traditions<br>of South India</h1>
+        <p class="hero__lead">Discover authentic flavors, traditional recipes, and delicious dishes from five beautiful South Indian states.</p>
+        <div class="hero__cta">
+            <a href="#states" class="btn btn--gold">Explore States &rarr;</a>
+            <a href="#dishes" class="btn btn--outline">Special Dishes &rarr;</a>
+        </div>
+        <form action="menu" method="get" class="hero__search">
+            <input type="text" name="search" placeholder="Search dosa, biryani, sadya..." required>
+            <button type="submit" class="btn btn--gold">Search</button>
+        </form>
+    </div>
+</section>
+
+<!-- EXPLORE STATES -->
+<section class="band" id="states">
+    <div class="section-title">
+        <div class="section-title__row"><h2 class="section-title__text">Explore South India</h2></div>
+        <p class="section-title__sub">Discover the unique flavors of every region</p>
+    </div>
+
+    <div class="grid-5">
+        <a class="state-card" href="menu?state=Andhra Pradesh">
+            <div class="state-card__photo"><img src="images/state-andhra.jpg" alt="Andhra Pradesh cuisine"></div>
+            <div class="state-card__body">
+                <h3>Andhra Pradesh</h3>
+                <p>Bold spices and unforgettable flavors</p>
+                <span class="btn btn--outline btn--sm">Explore Cuisine &rarr;</span>
+            </div>
+        </a>
+        <a class="state-card" href="menu?state=Telangana">
+            <div class="state-card__photo"><img src="images/state-telangana.jpg" alt="Telangana cuisine"></div>
+            <div class="state-card__body">
+                <h3>Telangana</h3>
+                <p>Rich heritage, unique taste</p>
+                <span class="btn btn--outline btn--sm">Explore Cuisine &rarr;</span>
+            </div>
+        </a>
+        <a class="state-card" href="menu?state=Karnataka">
+            <div class="state-card__photo"><img src="images/state-karnataka.jpg" alt="Karnataka cuisine"></div>
+            <div class="state-card__body">
+                <h3>Karnataka</h3>
+                <p>Traditional flavors, modern delight</p>
+                <span class="btn btn--outline btn--sm">Explore Cuisine &rarr;</span>
+            </div>
+        </a>
+        <a class="state-card" href="menu?state=Tamil Nadu">
+            <div class="state-card__photo"><img src="images/state-tamilnadu.jpg" alt="Tamil Nadu cuisine"></div>
+            <div class="state-card__body">
+                <h3>Tamil Nadu</h3>
+                <p>Simple ingredients, extraordinary taste</p>
+                <span class="btn btn--outline btn--sm">Explore Cuisine &rarr;</span>
+            </div>
+        </a>
+        <a class="state-card" href="menu?state=Kerala">
+            <div class="state-card__photo"><img src="images/state-kerala.jpg" alt="Kerala cuisine"></div>
+            <div class="state-card__body">
+                <h3>Kerala</h3>
+                <p>Fresh, healthy, full of flavor</p>
+                <span class="btn btn--outline btn--sm">Explore Cuisine &rarr;</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- SPECIAL DISHES (names and prices match your food table) -->
+<section class="band" id="dishes">
+    <div class="section-title">
+        <div class="section-title__row"><h2 class="section-title__text">Our Special Dishes</h2></div>
+        <p class="section-title__sub">Handpicked favorites from our kitchen</p>
+    </div>
+
+    <div class="grid-5">
+        <article class="food-card">
+            <div class="food-card__photo"><img src="images/dish-masala-dosa.jpg" alt="Mysore Masala Dosa"></div>
+            <div class="food-card__body">
+                <h3 class="food-card__name">Mysore Masala Dosa <span class="vegmark vegmark--veg" title="Vegetarian"><span></span></span></h3>
+                <p class="food-card__desc">Crisp dosa with red chutney and potato masala</p>
+                <div class="food-card__meta"><span class="food-card__state">Karnataka</span><span class="food-card__price">&#8377;120</span></div>
+                <a class="btn btn--gold btn--sm btn--block" href="menu?search=Mysore Masala Dosa">View Dish</a>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <div class="food-card__photo"><img src="images/dish-biryani.jpg" alt="Hyderabadi Biryani"></div>
+            <div class="food-card__body">
+                <h3 class="food-card__name">Hyderabadi Biryani <span class="vegmark vegmark--non" title="Non-vegetarian"><span></span></span></h3>
+                <p class="food-card__desc">Layered basmati rice with spiced chicken</p>
+                <div class="food-card__meta"><span class="food-card__state">Telangana</span><span class="food-card__price">&#8377;280</span></div>
+                <a class="btn btn--gold btn--sm btn--block" href="menu?search=Hyderabadi Biryani">View Dish</a>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <div class="food-card__photo"><img src="images/dish-idli-vada.jpg" alt="Idli Sambar"></div>
+            <div class="food-card__body">
+                <h3 class="food-card__name">Idli Sambar <span class="vegmark vegmark--veg" title="Vegetarian"><span></span></span></h3>
+                <p class="food-card__desc">Steamed rice cakes with sambar and chutney</p>
+                <div class="food-card__meta"><span class="food-card__state">Tamil Nadu</span><span class="food-card__price">&#8377;70</span></div>
+                <a class="btn btn--gold btn--sm btn--block" href="menu?search=Idli Sambar">View Dish</a>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <div class="food-card__photo"><img src="images/dish-parotta.jpg" alt="Kothu Parotta"></div>
+            <div class="food-card__body">
+                <h3 class="food-card__name">Kothu Parotta <span class="vegmark vegmark--non" title="Non-vegetarian"><span></span></span></h3>
+                <p class="food-card__desc">Shredded parotta stir-fried with egg and salna</p>
+                <div class="food-card__meta"><span class="food-card__state">Tamil Nadu</span><span class="food-card__price">&#8377;160</span></div>
+                <a class="btn btn--gold btn--sm btn--block" href="menu?search=Kothu Parotta">View Dish</a>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <div class="food-card__photo"><img src="images/dish-ragi.jpg" alt="Ragi Mudde"></div>
+            <div class="food-card__body">
+                <h3 class="food-card__name">Ragi Mudde <span class="vegmark vegmark--veg" title="Vegetarian"><span></span></span></h3>
+                <p class="food-card__desc">Finger millet balls served with saaru</p>
+                <div class="food-card__meta"><span class="food-card__state">Karnataka</span><span class="food-card__price">&#8377;110</span></div>
+                <a class="btn btn--gold btn--sm btn--block" href="menu?search=Ragi Mudde">View Dish</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- CHEF'S PICK (no fake discount, one real dish) -->
+<section class="special">
+    <img class="special__img" src="images/special.jpg" alt="">
+    <div class="special__inner">
+        <div class="special__main">
+            <p class="special__label">Chef&rsquo;s Pick</p>
+            <h2 class="gold-text">Kerala Sadya</h2>
+            <p class="special__sub">Kerala &middot; &#8377;220</p>
+            <a class="btn btn--gold" href="menu?search=Kerala Sadya">Order Now</a>
+        </div>
+        <div class="special__side">
+            <p>A feast on a banana leaf with many traditional dishes. Experience authentic South Indian flavors, prepared fresh.</p>
+        </div>
+    </div>
+</section>
+
+<!-- WHY RESTOFESTRO -->
+<section class="band band--tight">
+    <div class="section-title">
+        <div class="section-title__row"><h2 class="section-title__text">Why RestoFestro?</h2></div>
+    </div>
+    <ul class="why">
+        <li>
+            <span class="why__icon"><svg viewBox="0 0 24 24"><path d="M6 14a4 4 0 0 1 1-7.8A5 5 0 0 1 17 6a4 4 0 0 1 1 8"/><path d="M6 14h12v5H6z"/></svg></span>
+            <h3>Authentic Flavors</h3>
+            <p>Traditional dishes inspired by regional cuisines.</p>
+        </li>
+        <li>
+            <span class="why__icon"><svg viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14z"/><path d="M5 19c3-4 6-6 9-8"/></svg></span>
+            <h3>Fresh &amp; Quality</h3>
+            <p>Fresh ingredients and carefully prepared meals.</p>
+        </li>
+        <li>
+            <span class="why__icon"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span>
+            <h3>Fast &amp; Reliable</h3>
+            <p>A smooth ordering experience from kitchen to doorstep.</p>
+        </li>
+        <li>
+            <span class="why__icon"><svg viewBox="0 0 24 24"><path d="M5 4l5 14 2-6 6-2z"/></svg></span>
+            <h3>Easy Ordering</h3>
+            <p>Simple browsing, cart and checkout experience.</p>
+        </li>
+    </ul>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+    <img src="images/story.jpg" alt="A South Indian thali with rice and curries">
+    <div>
+        <h2 class="story__title">Discover Our Story</h2>
+        <p>RestoFestro brings the rich culinary traditions of South India together in one convenient food ordering experience.</p>
+        <p class="story__from">Explore food from:</p>
+        <div class="chips">
+            <a href="menu?state=Andhra Pradesh">Andhra Pradesh</a>
+            <a href="menu?state=Telangana">Telangana</a>
+            <a href="menu?state=Karnataka">Karnataka</a>
+            <a href="menu?state=Tamil Nadu">Tamil Nadu</a>
+            <a href="menu?state=Kerala">Kerala</a>
+        </div>
+        <a class="btn btn--outline" href="#states">Start Exploring &rarr;</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="site-footer__grid">
+        <div>
+            <a href="home.html" class="logo"><span class="logo__name">RestoFestro</span><span class="logo__tag">Taste the Traditions of South India</span></a>
+            <p style="margin-top:12px">South Indian regional food ordering, one state at a time.</p>
+        </div>
+        <div>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#states">States</a></li>
+                <li><a href="#dishes">Dishes</a></li>
+                <li><a href="cart">Cart</a></li>
+                <li><a href="orders">My Orders</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Account</h2>
+            <ul>
+                <li><a href="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="site-footer__copy">&copy; 2026 RestoFestro build by Kruthika.</p>
+</footer>
+
+</body>
+</html>
